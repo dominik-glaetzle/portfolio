@@ -6,14 +6,14 @@ export interface GridItem {
 }
 
 export const gridItems: GridItem[] = [
+    { i: 'article', component: GridComponents.Article },
     { i: 'description', component: GridComponents.Description },
     { i: 'location', component: GridComponents.Location },
-    { i: 'project-1', component: GridComponents.FirstProject },
+    // { i: 'project-1', component: GridComponents.FirstProject },
+    { i: 'spotify', component: GridComponents.SpotifyAPI },
     { i: 'linkedin', component: GridComponents.LinkedIn },
     { i: 'theme', component: GridComponents.Theme },
-    { i: 'project-2', component: GridComponents.SecondProject },
-    { i: 'spotify', component: GridComponents.Spotify },
-    { i: 'project-3', component: GridComponents.ThirdProject },
-    { i: 'article', component: GridComponents.Article },
-    { i: 'contact', component: GridComponents.Contact },
+    // { i: 'project-2', component: GridComponents.SecondProject },
+    // { i: 'project-3', component: GridComponents.ThirdProject },
+    // { i: 'contact', component: GridComponents.Contact },
 ];

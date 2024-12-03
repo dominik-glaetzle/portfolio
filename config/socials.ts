@@ -15,29 +15,19 @@ export interface Social {
 
 const socials: Social[] = [
     {
-        name: 'Facebook',
-        url: 'https://facebook.com/maulism',
-        icon: FaFacebook,
-    },
-    {
         name: 'Github',
-        url: 'https://github.com/bymaul/',
+        url: 'https://github.com/smxkz',
         icon: FaGithub,
     },
     {
         name: 'Instagram',
-        url: 'https://instagram.com/maulaanaahmad',
+        url: 'https://instagram.com/dominikglaetzle',
         icon: FaInstagram,
     },
     {
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/maulana-ahmad',
+        url: 'https://www.linkedin.com/in/dominik-glätzle-2487b62b5/',
         icon: FaLinkedin,
-    },
-    {
-        name: 'YouTube',
-        url: 'https://youtube.com/@maulx',
-        icon: FaYoutube,
     },
 ];
 

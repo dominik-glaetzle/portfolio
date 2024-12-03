@@ -10,9 +10,9 @@ import Card from '../ui/card';
 const MAX_ZOOM = 10;
 const MIN_ZOOM = 4;
 const INITIAL_VIEW_STATE = {
-    latitude: -7.7962967,
-    longitude: 110.3667211,
-    zoom: MAX_ZOOM,
+    latitude: 47.2682, // Breitengrad für die Altstadt von Innsbruck
+    longitude: 11.3923, // Längengrad für die Altstadt von Innsbruck
+    zoom: MAX_ZOOM, // Maximale Zoomstufe
 };
 
 const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
