@@ -3,7 +3,7 @@ export { default as Contact } from './contact';
 export { default as Description } from './description';
 export { default as FirstProject } from './first-project';
 export { default as LinkedIn } from './linkedin';
-export { default as Spotify } from './spotify';
+export { default as Spotify } from './github';
 export { default as Location } from './location';
 export { default as SecondProject } from './second-project';
 export { default as SpotifyAPI } from './spotify_api';
