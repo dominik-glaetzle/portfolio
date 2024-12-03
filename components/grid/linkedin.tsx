@@ -8,7 +8,7 @@ export default function LinkedIn() {
             <div className='absolute bottom-3 left-3'>
                 <Anchor
                     className='cancel-drag'
-                    href='https://linkedin.com/in/maulana-ahmad'
+                    href='https://www.linkedin.com/in/dominik-glätzle-2487b62b5/'
                     target='_blank'>
                     <FaArrowRight className='-rotate-45 transition-transform duration-300 group-hover:rotate-0' />
                     <span className='sr-only'>LinkedIn</span>
