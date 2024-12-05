@@ -9,7 +9,7 @@ export default function Home() {
             <Container
                 as='header'
                 className='flex items-center justify-between py-0'>
-                <h1 className='hidden'>Maulana Ahmad Aji Triadi</h1>
+                <h1 className='hidden'>Dominik Glätzle</h1>
             </Container>
             <main className='py-8'>
                 <GridLayout
