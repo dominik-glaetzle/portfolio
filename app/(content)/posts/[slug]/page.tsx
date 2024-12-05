@@ -29,16 +29,7 @@ export const generateMetadata = async ({ params }: { params: Params }) => {
             type: 'article',
             publishedTime: date,
             url: `${siteConfig.url}/posts/${post.slug}`,
-            authors: 'Maulana',
-            images: siteConfig.image,
-        },
-        twitter: {
-            title,
-            description,
-            images: siteConfig.image,
-        },
-        alternates: {
-            canonical: `${siteConfig.url}/posts/${post.slug}`,
+            authors: 'Dominik',
         },
     };
 };
@@ -59,7 +50,7 @@ const PostPage = async ({ params }: { params: Params }) => {
         author: [
             {
                 '@type': 'Person',
-                name: 'Maulana',
+                name: 'Dominik',
                 url: siteConfig.url,
             },
         ],
