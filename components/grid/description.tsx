@@ -32,7 +32,7 @@ export default function Description() {
                     </span>
                     , a computer science student from innsbruck, tyrol.{' '}
                     <span className="hidden md:inline">
-                        I&apos;m interested in react (native), node.js and java
+                        I&apos;m interested in react (native), node.js and java.
                     </span>
                 </p>
             </Card>
