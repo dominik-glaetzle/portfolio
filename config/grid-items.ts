@@ -10,7 +10,7 @@ export const gridItems: GridItem[] = [
     { i: 'description', component: GridComponents.Description },
     { i: 'location', component: GridComponents.Location },
     // { i: 'project-1', component: GridComponents.FirstProject },
-    { i: 'spotify', component: GridComponents.SpotifyAPI },
+    { i: 'spotify', component: GridComponents.Spotify },
     { i: 'linkedin', component: GridComponents.LinkedIn },
     { i: 'theme', component: GridComponents.Theme },
     // { i: 'project-2', component: GridComponents.SecondProject },

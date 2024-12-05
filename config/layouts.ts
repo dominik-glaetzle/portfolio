@@ -3,10 +3,10 @@ import { Layout } from 'react-grid-layout';
 export const lgLayout: Layout[] = [
     { i: 'description', x: 0, y: 0, w: 2, h: 1 },
     { i: 'location', x: 2, y: 0, w: 1, h: 1 },
-    { i: 'theme', x: 3, y: 2, w: 1, h: 1 },
+    { i: 'theme', x: 3, y: 0, w: 1, h: 1 },
     { i: 'spotify', x: 0, y: 1, w: 1, h: 1 },
     { i: 'linkedin', x: 1, y: 1, w: 1, h: 1 },
-    { i: 'article', x: 0, y: 2, w: 2, h: 1 },
+    { i: 'article', x: 2, y: 2, w: 2, h: 1 },
 ];
 
 export const mdLayout: Layout[] = [
@@ -15,7 +15,7 @@ export const mdLayout: Layout[] = [
     { i: 'theme', x: 3, y: 2, w: 1, h: 1 },
     { i: 'spotify', x: 0, y: 1, w: 1, h: 1 },
     { i: 'linkedin', x: 1, y: 1, w: 1, h: 1 },
-    { i: 'article', x: 0, y: 2, w: 2, h: 1 },
+    { i: 'article', x: 2, y: 2, w: 2, h: 1 },
 ];
 
 export const smLayout: Layout[] = [
@@ -24,5 +24,5 @@ export const smLayout: Layout[] = [
     { i: 'theme', x: 3, y: 2, w: 1, h: 1 },
     { i: 'spotify', x: 0, y: 1, w: 1, h: 1 },
     { i: 'linkedin', x: 1, y: 1, w: 1, h: 1 },
-    { i: 'article', x: 0, y: 2, w: 2, h: 1 },
+    { i: 'article', x: 2, y: 2, w: 2, h: 1 },
 ];
