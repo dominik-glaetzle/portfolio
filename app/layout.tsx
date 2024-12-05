@@ -20,17 +20,6 @@ export const metadata: Metadata = {
         siteName: siteConfig.title,
         locale: 'en-US',
         type: 'website',
-        images: [
-            {
-                url: siteConfig.image,
-            },
-        ],
-    },
-    twitter: {
-        title: siteConfig.title,
-        description: siteConfig.description,
-        images: siteConfig.image,
-        card: 'summary_large_image',
     },
     robots: {
         index: true,
