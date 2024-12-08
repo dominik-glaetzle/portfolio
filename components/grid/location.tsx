@@ -7,7 +7,7 @@ import { FaMinus, FaPlus } from 'react-icons/fa6';
 import Map, { MapRef } from 'react-map-gl';
 import Card from '../ui/card';
 
-const MAX_ZOOM = 10;
+const MAX_ZOOM = 12;
 const MIN_ZOOM = 4;
 const INITIAL_VIEW_STATE = {
     latitude: 47.2682, // Breitengrad für die Altstadt von Innsbruck
