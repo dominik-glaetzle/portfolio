@@ -1,5 +1,5 @@
 export const siteConfig = {
-    title: 'glaetzle.io',
-    url: 'localhost',
-    description:'Personal blog of Dominik Glätzle',
+    title: 'Dominik Glätzle',
+    url: 'glaetzle.io',
+    description:'I am a computer science student from Innsbruck, Austria',
 };

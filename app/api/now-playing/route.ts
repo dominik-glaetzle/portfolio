@@ -51,8 +51,6 @@ const fetchSpotifyData = async (url: string, accessToken: string): Promise<Spoti
     });
 
     if (!response.ok) {
-        console.log("here")
-        console.log(response);
         throw new Error(`Failed to fetch data from ${url}`);
     }
     return response.json();

@@ -13,14 +13,6 @@ export const metadata: Metadata = {
         template: '%s',
     },
     description: siteConfig.description,
-    openGraph: {
-        title: siteConfig.title,
-        description: siteConfig.description,
-        url: siteConfig.url,
-        siteName: siteConfig.title,
-        locale: 'en-US',
-        type: 'website',
-    },
     robots: {
         index: true,
         follow: true,
