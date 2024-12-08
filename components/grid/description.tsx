@@ -1,7 +1,9 @@
-import profile from '@/public/images/profile-picture.jpeg';
+import memoji from '@/public/images/memoji.png';
+import profilepicture from '@/public/images/profile-picture.png';
 import Image from 'next/image';
 import Card from '../ui/card';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 
 export default function Description() {
     return (
@@ -14,14 +16,14 @@ export default function Description() {
             </Head>
 
             <Card className="flex flex-col justify-center gap-4 p-8">
-                <div className="relative size-14 overflow-hidden rounded-full sm:size-16">
+                <div className="relative size-14 overflow-hidden rounded-full sm:size-36">
                     <Image
-                        src={profile}
+                        src={memoji}
                         alt="Dominik Glätzle"
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         placeholder="blur"
                         priority
+                        className="transition-transform duration-300 ease-in-out hover:scale-110"
                     />
                 </div>
 
