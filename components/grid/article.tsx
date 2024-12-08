@@ -7,8 +7,6 @@ import Card from '../ui/card';
 
 export default function Article() {
     const post = getLatestPost();
-    console.log("post", post);
-
     return (
         <Card className='flex flex-col justify-center gap-6 p-8'>
             <h2
