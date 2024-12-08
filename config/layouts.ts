@@ -10,19 +10,19 @@ export const lgLayout: Layout[] = [
 ];
 
 export const mdLayout: Layout[] = [
-    { i: 'description', x: 0, y: 0, w: 2, h: 1 },
+    { i: 'description', x: 0, y: 0, w: 2, h: 2 },
     { i: 'location', x: 2, y: 0, w: 1, h: 1 },
     { i: 'theme', x: 3, y: 1, w: 1, h: 1 },
     { i: 'github', x: 0, y: 1, w: 1, h: 1 },
     { i: 'linkedin', x: 1, y: 1, w: 1, h: 1 },
-    { i: 'article', x: 2, y: 2, w: 2, h: 1 },
+    { i: 'article', x: 2, y: 2, w: 2, h: 2 },
 ];
 
 export const smLayout: Layout[] = [
-    { i: 'description', x: 0, y: 0, w: 2, h: 1 },
+    { i: 'description', x: 0, y: 0, w: 2, h: 2 },
     { i: 'github', x: 0, y: 3, w: 1, h: 1 },
     { i: 'location', x: 1, y: 1, w: 1, h: 1 },
-    { i: 'article', x: 0, y: 2, w: 2, h: 1 },
+    { i: 'article', x: 0, y: 2, w: 2, h: 2 },
     { i: 'linkedin', x: 0, y: 1, w: 1, h: 1 },
     { i: 'theme', x: 1, y: 3, w: 1, h: 1 },
 ];
