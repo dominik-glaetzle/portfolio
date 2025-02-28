@@ -1,4 +1,4 @@
-import projectImage from '@/public/projects/api-collection.png';
+import projectImage from '@/public/projects/MoviePicker.png';
 import Project from '../project';
 
 export default function SecondProject() {

@@ -1,12 +1,12 @@
-import projectImage from '@/public/projects/next-blog-starter.png';
+import projectImage from '@/public/projects/MoviePicker.png';
 import Project from '../project';
 
 export default function FirstProject() {
     return (
         <Project
-            projectName='Next Blog Starter'
+            projectName='Movie Picker'
             projectImage={projectImage}
-            backgroundColor='bg-red-100'
+            backgroundColor='bg-green-100'
         />
     );
 }

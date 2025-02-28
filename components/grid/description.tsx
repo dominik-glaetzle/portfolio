@@ -43,7 +43,7 @@ export default function Description() {
         >
           <p className="text-balance leading-relaxed">
             I&apos;m{" "}
-            <span className="font-[Poppins] text-xl font-black">dominik</span>,
+            <span className="font-[Poppins] text-xl bg-gradient-to-r from-[#008F7A] to-[#0089BA] bg-clip-text text-transparent">dominik</span>,
             a computer science student from Innsbruck, Tyrol.{" "}
             <span className="hidden md:inline">
               I&apos;m interested in React (Native), Node.js, and Java.
