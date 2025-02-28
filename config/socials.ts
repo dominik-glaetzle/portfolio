@@ -16,7 +16,7 @@ export interface Social {
 const socials: Social[] = [
     {
         name: 'Github',
-        url: 'https://github.com/smxkz',
+        url: 'https://github.com/dominik-glaetzle',
         icon: FaGithub,
     },
     {

@@ -13,7 +13,7 @@
         "clsx": "^2.1.1",
         "framer-motion": "^11.13.1",
         "mapbox-gl": "^3.8.0",
-        "next": "^15.0.3",
+        "next": "^15.2.0",
         "next-mdx-remote": "^5.0.0",
         "next-themes": "^0.3.0",
         "react": "^19.0.0-rc-fb9a90fa48-20240614",
