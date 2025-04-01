@@ -7,18 +7,18 @@ import { FaMinus, FaPlus } from 'react-icons/fa6';
 import Map, { MapRef } from 'react-map-gl';
 import Card from '../ui/card';
 
-const MAX_ZOOM = 12;
+const MAX_ZOOM = 10;
 const MIN_ZOOM = 4;
 const INITIAL_VIEW_STATE = {
-    latitude: 47.2682, // Breitengrad für die Altstadt von Innsbruck
-    longitude: 11.3923, // Längengrad für die Altstadt von Innsbruck
-    zoom: MAX_ZOOM, // Maximale Zoomstufe
+    latitude: 47.2682,
+    longitude: 11.3923,
+    zoom: 8,
 };
 
 const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
 
 const Location = memo(function Location() {
-    const [currentZoom, setCurrentZoom] = useState(MAX_ZOOM);
+    const [currentZoom, setCurrentZoom] = useState(8);
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
     const [isMapLoaded, setIsMapLoaded] = useState(false);
 
