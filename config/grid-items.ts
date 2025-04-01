@@ -1,4 +1,5 @@
 import * as GridComponents from '@/components/grid';
+import React from "react";
 
 export interface GridItem {
     i: string;
@@ -10,6 +11,6 @@ export const gridItems: GridItem[] = [
     { i: 'description', component: GridComponents.Description },
     { i: 'location', component: GridComponents.Location },
     { i: 'contact', component: GridComponents.Contact },
-    { i: 'linkedin', component: GridComponents.LinkedIn },
+    { i: 'first-project', component: GridComponents.FirstProject },
     { i: 'theme', component: GridComponents.Theme },
 ];
