@@ -8,6 +8,6 @@ export const lgLayout: Layout[] = [
 
 export const smLayout: Layout[] = [
     { i: 'logo', x: 0, y: 1, w: 1, h: 1 },
-    { i: 'snowflake', x: 0, y: 2, w: 1, h: 1 },
-    { i: 'page', x: 1, y: 1, w: 2, h: 1 }
+    { i: 'snowflake', x: 1, y: 1, w: 1, h: 1 },
+    { i: 'page', x: 0, y: 3, w: 2, h: 1 }
 ];
