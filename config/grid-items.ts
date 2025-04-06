@@ -13,4 +13,5 @@ export const gridItems: GridItem[] = [
     { i: 'contact', component: GridComponents.Contact },
     { i: 'first-project', component: GridComponents.FirstProject },
     { i: 'theme', component: GridComponents.Theme },
+    { i: 'tech-stack', component: GridComponents.TechStack },
 ];
