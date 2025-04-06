@@ -5,7 +5,7 @@ import Card from '../ui/card';
 export default function Contact() {
     return (
         <Card className="relative flex h-full flex-col items-center justify-center bg-[#1DB954] dark:bg-[#1DB954]">
-            <div className='inline-flex flex-col items-center gap-6 lg:flex-row'>
+            <div className='inline-flex flex-col items-center gap-2 lg:flex-row'>
                 <a
                     className='cancel-drag group inline-flex items-center justify-center gap-3 overflow-hidden whitespace-nowrap rounded-full bg-white p-3 px-4 py-2 outline-none ring-2 ring-gray-200/45 transition-all duration-300 focus-within:outline-none focus-within:ring-4 hover:ring-4 dark:text-black dark:ring-gray-200/30'
                     href='mailto:dominik@glaetzle.io'>

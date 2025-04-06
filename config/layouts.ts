@@ -6,7 +6,8 @@ export const lgLayout: Layout[] = [
     { i: 'location', x: 2, y: 0, w: 2, h: 2 },
     { i: 'theme', x: 1, y: 1, w: 1, h: 1 },
     { i: 'first-project', x: 0, y: 1, w: 1, h: 1 },
-    { i: 'contact', x: 0, y: 3, w: 2, h: 1},
+    { i: 'contact', x: 0, y: 3, w: 1, h: 1},
+    { i: 'tech-stack', x: 1, y: 3, w: 1, h: 1},
 ];
 
 export const mdLayout: Layout[] = [
