@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import Link, { LinkProps } from 'next/link';
+import React from "react";
 
 export default function Anchor({
     ...props
