@@ -1,5 +1,6 @@
 import * as GridComponents from '@/components/grid';
 import React from "react";
+import Github from "@/components/grid/github";
 
 export interface GridItem {
     i: string;
@@ -13,5 +14,5 @@ export const gridItems: GridItem[] = [
     { i: 'contact', component: GridComponents.Contact },
     { i: 'first-project', component: GridComponents.FirstProject },
     { i: 'theme', component: GridComponents.Theme },
-    { i: 'tech-stack', component: GridComponents.TechStack },
+    { i: 'github', component: GridComponents.Github },
 ];
