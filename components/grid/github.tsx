@@ -15,7 +15,7 @@ export default function Github() {
                     href="https://github.com/dominik-glaetzle"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg bg-white text-black px-4 py-1 text-sm font-medium transition hover:bg-gray-200"
+                    className="inline-flex items-center gap-2 rounded-lg bg-white text-black px-4 py-1 text-sm font-medium transition hover:bg-gray-200 dark:bg-gray-400"
                 >
                     View on GitHub
                     <FaArrowRight size="0.9rem" />
