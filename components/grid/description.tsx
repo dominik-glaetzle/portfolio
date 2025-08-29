@@ -44,9 +44,9 @@ export default function Description() {
           <p className="text-balance leading-relaxed">
             I&apos;m{" "}
             <span className="font-[Poppins] text-xl font-black">dominik</span>,
-            a computer science student from Innsbruck, Tyrol.{" "}
+            a computer science student based in  innsbruck, tyrol.{" "}
             <span className="hidden md:inline">
-              I&apos;m interested in React (Native), Node.js, and Java.
+My main interests lie in web development and mobile app design.
             </span>
           </p>
         </motion.div>
