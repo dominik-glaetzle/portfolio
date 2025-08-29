@@ -1,12 +1,12 @@
-import projectImage from '@/public/projects/avalanche-alert/logo.png';
+import projectImage from '@/public/projects/montis/logo.webp';
 import Project from '../project';
 
 export default function FirstProject() {
     return (
         <Project
-            projectName='Avalanche Alert'
+            projectName='Montis'
             projectImage={projectImage}
-            backgroundColor='bg-red-100'
+            backgroundColor='bg-black-100'
         />
     );
 }
