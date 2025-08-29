@@ -1,5 +1,5 @@
 "use client";
-import memoji from "@/public/images/memoji.png";
+import memoji from "@/public/images/memoji.webp";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
