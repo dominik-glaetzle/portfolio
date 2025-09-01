@@ -2,10 +2,11 @@
 
 import { cn } from '@/lib/utils';
 import { useTheme } from 'next-themes';
-import { memo, useCallback, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { FaMinus, FaPlus } from 'react-icons/fa6';
 import Map, { MapRef } from 'react-map-gl';
 import Card from '../ui/card';
+import SkeletonMap from "@/components/grid/SkeletonMap";
 
 const MAX_ZOOM = 10;
 const MIN_ZOOM = 4;
@@ -23,7 +24,6 @@ const Location = memo(function Location() {
     const [isMapLoaded, setIsMapLoaded] = useState(false);
 
     const mapRef = useRef<MapRef>(null);
-
     const { theme } = useTheme();
 
     const handleZoom = useCallback(
@@ -33,9 +33,7 @@ const Location = memo(function Location() {
             setCurrentZoom((prevZoom) => {
                 const newZoom = prevZoom + (zoomIn ? 1 : -1);
                 if (newZoom >= MIN_ZOOM && newZoom <= MAX_ZOOM) {
-                    zoomIn
-                        ? mapRef.current?.zoomIn()
-                        : mapRef.current?.zoomOut();
+                    zoomIn ? mapRef.current?.zoomIn() : mapRef.current?.zoomOut();
                     setIsButtonDisabled(true);
                     setTimeout(() => setIsButtonDisabled(false), 300);
                     return newZoom;
@@ -53,7 +51,11 @@ const Location = memo(function Location() {
     );
 
     return (
-        <Card className='relative size-full'>
+        <Card className="relative size-full overflow-hidden rounded-2xl">
+            {!isMapLoaded && (
+                <SkeletonMap />
+            )}
+
             <Map
                 mapboxAccessToken={mapboxToken}
                 mapStyle={mapStyle}
@@ -69,19 +71,22 @@ const Location = memo(function Location() {
                 onLoad={() => setIsMapLoaded(true)}
                 initialViewState={INITIAL_VIEW_STATE}
                 maxZoom={MAX_ZOOM}
-                minZoom={MIN_ZOOM}>
+                minZoom={MIN_ZOOM}
+            >
                 {isMapLoaded && (
-                    <div className='absolute inset-x-3 bottom-3 flex items-center justify-between'>
+                    <div className="absolute inset-x-3 bottom-3 flex items-center justify-between">
                         <Button
                             isVisible={currentZoom > MIN_ZOOM}
                             onClick={() => handleZoom(false)}
-                            aria-label='Zoom Out'>
+                            aria-label="Zoom Out"
+                        >
                             <FaMinus />
                         </Button>
                         <Button
                             isVisible={currentZoom < MAX_ZOOM}
                             onClick={() => handleZoom(true)}
-                            aria-label='Zoom In'>
+                            aria-label="Zoom In"
+                        >
                             <FaPlus />
                         </Button>
                     </div>
@@ -96,9 +101,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = memo(function Button({
-    isVisible,
-    ...props
-}: Readonly<ButtonProps>) {
+                                        isVisible,
+                                        ...props
+                                    }: Readonly<ButtonProps>) {
     return (
         <button
             className={cn(
@@ -106,7 +111,7 @@ const Button = memo(function Button({
                 'outline-none ring-2 ring-gray-200/45 focus-within:outline-none focus-within:ring-4 hover:ring-4 dark:text-black dark:ring-gray-200/30',
                 isVisible ? 'cancel-drag' : 'invisible'
             )}
-            type='button'
+            type="button"
             {...props}
         />
     );
