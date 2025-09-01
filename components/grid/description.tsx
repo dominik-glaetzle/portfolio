@@ -15,26 +15,17 @@ export default function Description() {
         />
       </Head>
 
-      <Card className="flex flex-col justify-center p-8">
-        <motion.div
-          className="relative size-14 overflow-hidden rounded-full sm:size-36"
-          initial={{ scale: 0, opacity: 0, rotate: 250 }}
-          animate={{ scale: 1, opacity: 1, rotate: 360 }}
-          whileHover={{ scale: 1.8 }}
-          transition={{
-            duration: 0.7,
-            ease: "easeOut",
-          }}
-        >
-          <Image
-            src={memoji}
-            alt="Dominik Glätzle"
-            fill
-            placeholder="blur"
-            priority
-            className="transition-transform duration-300 ease-in-out"
-          />
-        </motion.div>
+        <Card className="flex flex-col justify-center p-8 gap-6">
+            <div className="relative w-36 h-36 ml-1">
+                <Image
+                    src={memoji}
+                    alt="Dominik Glätzle"
+                    fill
+                    placeholder="blur"
+                    className="rounded-full object-cover"
+                />
+            </div>
+
 
         <motion.div
           initial={{ y: 50, opacity: 0 }}
