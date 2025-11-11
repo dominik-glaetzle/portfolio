@@ -5,6 +5,7 @@ import { fetchLatestActivities } from "@/lib/strava";
 import Image from "next/image";
 import stravaOrange from "@/public/images/strava-orange.svg";
 import stravaWhite from "@/public/images/strava-white.svg";
+import StravaPolylinePreview from "@/components/StravaPolylinePreview";
 
 export default function LastStravaActivityCard() {
   const [activity, setActivity] = useState<any>(null);
@@ -76,12 +77,11 @@ export default function LastStravaActivityCard() {
           {date}
         </div>
       </div>
-
-      {activity.device_name && (
-        <p className="text-xs text-gray-400 dark:text-gray-600 mt-2 sm:block">
-          recorded with {activity.device_name}
-        </p>
-      )}
+      <div className="hidden lg:block absolute bottom-4 right-2 w-36 h-40">
+        <StravaPolylinePreview
+          summaryPolyline={activity.map.summary_polyline}
+        />
+      </div>
     </Card>
   );
 }
