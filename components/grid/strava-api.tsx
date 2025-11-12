@@ -32,7 +32,11 @@ export default function LastStravaActivityCard() {
     );
   }
 
-  const distanceKm = (activity.distance / 1000).toFixed(2);
+  const distanceOrHeartRate =
+    activity.distance === 0
+      ? `${activity.average_heartrate} bpm`
+      : `${(activity.distance / 1000).toFixed(2)} km`;
+
   const durationMin = Math.round(activity.moving_time / 60);
   const date = new Date(activity.start_date).toLocaleDateString("de-AT", {
     year: "numeric",
@@ -48,14 +52,14 @@ export default function LastStravaActivityCard() {
           alt="Strava"
           width={100}
           height={100}
-          className="dark:hidden w-30 sm:w-14 md:w-16 lg:w-30"
+          className="dark:hidden w-30 sm:w-8 md:w-16 lg:w-30"
         />
         <Image
           src={stravaOrange}
           alt="Strava"
           width={100}
           height={100}
-          className="hidden dark:block w-30 sm:w-14 md:w-16 lg:w-30"
+          className="hidden dark:block w-30 sm:w-8 md:w-16 lg:w-30"
         />
       </div>
 
@@ -68,7 +72,7 @@ export default function LastStravaActivityCard() {
 
       <div className="flex flex-wrap gap-3 text-sm sm:gap-1.5">
         <div className="bg-white/10 dark:bg-black/10 px-3 py-1 rounded-full">
-          {distanceKm} km
+          {distanceOrHeartRate}
         </div>
         <div className="bg-white/10 dark:bg-black/10 px-3 py-1 rounded-full">
           {durationMin} min
