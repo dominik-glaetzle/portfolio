@@ -32,6 +32,14 @@ export default function LastStravaActivityCard() {
     );
   }
 
+  const formatActivityType = (type: string) => {
+    switch (type) {
+      case "WeightTraining":
+        return "Weight Training";
+      default:
+        return type;
+    }
+  };
   const distanceOrHeartRate =
     activity.distance === 0
       ? `${activity.average_heartrate} bpm`
@@ -64,7 +72,9 @@ export default function LastStravaActivityCard() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <h2 className="hidden lg:block text-xl font-bold">{activity.name}</h2>
+        <h2 className="hidden lg:block text-xl font-bold">
+          {formatActivityType(activity.name)}
+        </h2>
         <p className="text-sm text-gray-400 dark:text-gray-600">
           {activity.type}
         </p>
