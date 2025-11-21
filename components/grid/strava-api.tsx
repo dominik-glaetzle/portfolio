@@ -33,6 +33,8 @@ export default function LastStravaActivityCard() {
   }
 
   const formatActivityType = (type: string) => {
+    console.log("type", type);
+    console.log("here");
     switch (type) {
       case "WeightTraining":
         return "Weight Training";
@@ -72,11 +74,9 @@ export default function LastStravaActivityCard() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <h2 className="hidden lg:block text-xl font-bold">
-          {formatActivityType(activity.name)}
-        </h2>
+        <h2 className="hidden lg:block text-xl font-bold">{activity.name}</h2>
         <p className="text-sm text-gray-400 dark:text-gray-600">
-          {activity.type}
+          {formatActivityType(activity.type)}
         </p>
       </div>
 
